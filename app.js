@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/routes/ekow.html");
+  res.sendFile(__dirname + "/views/ekow.html");
 });
 
 app.use('/', indexRouter);
